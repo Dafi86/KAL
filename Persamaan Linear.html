@@ -1,0 +1,665 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pengertian persamaan Linear &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=8878045cc6db502f8baf" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="_static/scripts/fontawesome.js?digest=8878045cc6db502f8baf"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf" />
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Persamaan Linear';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <img src="_static/logo.png" class="logo__image only-dark pst-js-only" alt="My sample book - Home"/>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Komputasi Aljabar Linear
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPersamaan Linear.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Persamaan Linear.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button>
+
+
+<button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+</button>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Pengertian persamaan Linear</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengertian persamaan Linear</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-persamaan-linear">Sifat Persamaan Linear</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear">Jenis-jenis Persamaan Linear</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="pengertian-persamaan-linear">
+<h1>Pengertian persamaan Linear<a class="headerlink" href="#pengertian-persamaan-linear" title="Link to this heading">#</a></h1>
+<p>Pengertian persamaan Linear merupakan salah satu persamaan dari ilmu aljabar di mana persamaan ini sukunya mengandung konstanta dengan variabel tunggal. Mengapa disebut linear, karena hubungan hubungan matematis ini digambarkan dengan garis lurus dalam sistem koordinat kartesius.</p>
+<p>Persamaan linear memiliki lawan, yaitu pertidaksamaan linear. Namun, pada kesempatan ini kita akan membahas soal persamaan linear.</p>
+<p>Sebelum masuk ke pembahasan lebih jauh. Kita bahas lebih dulu mengenai definisi variabel, koefisien, konstanta, dan suku.</p>
+<p><strong>Koefisien:</strong> bilangan yang menjabarkan jumlah variabel yang sejenis. Koefisien ini terletak di depan variabel.
+<strong>Variabel:</strong> Pengganti bilangan yang belum diketahui nilainya. Variabel biasanya dilambangkan dengan huruf-huruf seperti a,b,c dan yang lain sebagainya.
+<strong>Konstanta:</strong> Nilai bilangan konstan yang tidak diikuti variabel di belakangnya.
+<strong>Suku:</strong> Bagian dari suatu persamaan yang terdiri dari variabel, koefisien, dan konstanta</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="sifat-persamaan-linear">
+<h1>Sifat Persamaan Linear<a class="headerlink" href="#sifat-persamaan-linear" title="Link to this heading">#</a></h1>
+<p>Ada beberapa sifat-sifat yang dimiliki oleh persamaan linear, yaitu sebagai berikut:</p>
+<p>Penjumlahan dan pengurangan bilangan kedua ruas tak akan mengubah persamaan nilai.
+Perkalian dan pembagian bilangan kedua ruas tidak mengubah nilai persamaan
+Nilai persamaan tidak berubah jika kedua ruas ditambah atau dikurangi bilangan yang sama.
+Suatu persamaan jika dipindah ruas maka penjumlahan berubah jadi pengurangan, perkalian berubah menjadi pembagian, dan sebaliknya.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="jenis-jenis-persamaan-linear">
+<h1>Jenis-jenis Persamaan Linear<a class="headerlink" href="#jenis-jenis-persamaan-linear" title="Link to this heading">#</a></h1>
+<p><strong>1. Persamaan Linear Satu Variabel</strong>
+Sesuai dengan namanya, persamaan linear satu variabel hanya mengandung satu variabel berpangkat 1 yang berbentuk kalimat terbuka dengan dihubungkan tanda =.</p>
+<p>Kalimat terbuka di sini berarti adalah kalimat yang belum tahu kebenaranya atau bisa jadi benar, bisa jadi juga salah.</p>
+<p>Bentuk umum dari Persamaan Linear Satu Variabel adalah:</p>
+<p>ax + b = 0</p>
+<p>Keterangan:</p>
+<p>a = koefisien</p>
+<p>b = konstanta</p>
+<p>x = variabel</p>
+<p>a dan b adalah bilangan riil</p>
+<p>a dan b bukan nol</p>
+<p>Namun, yang perlu digaris bawahi adalah variabel tidak selalu menggunakan lambang x, bisa jadi menggunakan y atau yang lainnya.</p>
+<p>Contoh sederhana:</p>
+<p>10x + 2 = 22</p>
+<p>x = 22-2/10</p>
+<p>x = 2</p>
+<p>Maka nilai dari huruf x adalah 2.</p>
+<p><strong>2. Persamaan Linear Dua Variabel</strong>
+Sesuai dengan namanya, Persamaan Linear Dua Variabel merupakan sistem persamaan dengan variabel yang berjumlah dua dengan berpangkat 1. Persamaan linear dua variabel menggunakan relasi = dan tidak ada perkalian variabel di setiap persamaan.</p>
+<p>Tanpa disadari Persamaan Linear Dua Variabel ini biasanya digunakan untuk menyelesaikan masalah sederhana di kehidupan sehari-hari terutama dalam aktivitas jual beli. Biasanya persamaan ini digunakan untuk mencari keuntungan.</p>
+<p>Bentuk umum dari Persamaan Linear Dua Variabel adalah:</p>
+<p>ax + by = c</p>
+<p>Persamaan Linear Dua Variabel bisa diselesaikan dengan dua metode, yaitu metode substitusi dan metode eliminasi.</p>
+<p>Metode Substitusi digunakan dengan cara mengubah satu variabel dengan variabel persamaan lain. Sedangkan Metode Eliminasi dengan cara menghapus salah satu variabel dalam persamaan.</p>
+<p>Contoh sederhana:</p>
+<p>2x+4y = 12</p>
+<p>2x+2y = 8</p>
+<p>Berapa nilai x dan y?</p>
+<p>Penyelesaian:</p>
+<p>Persamaan tersebut bisa diselesaikan dengan metode substitusi. Yaitu dengan cara pertama memilih salah satu persamaan.</p>
+<p>2x+4y = 12</p>
+<p>Kemudian kita pindahkan satu variabel ke ruas lainnya.</p>
+<p>2x=12-4y</p>
+<p>Untuk menghilangkan variabel x maka dibagi dengan nilai koefisien x.</p>
+<p>2x/2 = 12-4y/2</p>
+<p>x = 6 – 2y</p>
+<p>Jadi nilai x untuk sementara adalah 6-2y. Kemudian untuk mencari nilai y masukan ke dalam persamaan kedua.</p>
+<p>2x+2y = 8</p>
+<p>2(6-2y) + 2y = 8</p>
+<p>12-4y+2y = 8</p>
+<p>-2y = 8-12</p>
+<p>-2y = -4</p>
+<p>Untuk menghilangkan variabel ya maka dibagi dengan nilai koefisien y.</p>
+<p>-2y/-2 = -4/-2</p>
+<p>y = 2</p>
+<p>Setelah nilai y ditemukan kemudian masukan ke nilai x sementara tadi.</p>
+<p>x =.6-2y</p>
+<p>x = 6-2(2)</p>
+<p>x = 2.</p>
+<p><strong>3. Persamaan Linear Tiga Variabel</strong>
+Persamaan linear tiga variabel merupakan bentuk perluasan dari persamaan linear dua variabel. Sama seperti persamaan linear dua variabel, persamaan ini juga bisa diselesaikan dengan dua metode, yaitu substitusi dan eliminasi.</p>
+<p>Sistem ini biasanya digunakan untuk menentukan titik potong dan hal itu bermanfaat dalam hal seperti mendirikan bangunan supaya lebih presisi.</p>
+<p>Bentuk umum persamaan linear tiga variabel adalah:</p>
+<p>ax + by + cz = d</p>
+<p>Contoh sederhana:</p>
+<p>x + y + z = 8</p>
+<p>x + 2y + 2z = 14</p>
+<p>2x + y + 2z = 13</p>
+<p>Penyelesaian:</p>
+<p>x + y + z = 8</p>
+<p>Karena nilai koefisien dari x tidak ada, maka kita hanya perlu memindah dua variabel ke kanan.</p>
+<p>z = 8 – x – y</p>
+<p>Kemudian masukan persamaan salah satu persamaan.</p>
+<p>x + 2y + 2 (8 – x – y) = 14</p>
+<p>x + 2y +16 – 2x – 2y = 14</p>
+<p>-x + 16 = 14</p>
+<p>-x = 14-16</p>
+<p>-x = -2</p>
+<p>x = 2</p>
+<p>Setelah nilai x ditemukan nilai 2 masukan ke persamaan lainnya untuk menentukan y.</p>
+<p>2x + y + 2z = 13</p>
+<p>2(2) + y + 2(8 – 2 – y) =. 13</p>
+<p>4 + y + 16 – 4 – 2y = 13</p>
+<p>20 – 4 – y = 13</p>
+<p>16 – y = 13</p>
+<p>-y = 13-16</p>
+<p>-y = -3</p>
+<p>y = 3</p>
+<p>Kemudian untuk menentukan nilai z, masukan nilai x dan y ke nilai z sementara tadi.</p>
+<p>z = 8 – x – y</p>
+<p>z = 8 – 2 – 3</p>
+<p>z = 3</p>
+<p>Maka nilai x = 2, nilai y = 3, dan nilai z =</p>
+<p><strong>Contoh Soal Persamaan Linear</strong>
+Si A membeli sebuah roti dengan harga Rp5.000. Berapa jumlah roti yang bisa dibeli oleh Si A jika dia membawa uang Rp50.000 dan ingin dihabiskan seluruhnya?</p>
+<p>Jawaban:</p>
+<p>5000x = 50000</p>
+<p>x = 50000/5000</p>
+<p>x = 10</p>
+<p>Maka jumlah roti yang bisa dibeli oleh A adalah 10 potong.</p>
+<p>Andi membeli 2 buku dan 2 pensil dengan harga Rp20.000. Kemudian Budi membeli 3 buku dan 3 pensil dengan harga Rp30.000. Maka berapakah Cindy harus membayar jika dia membeli 3 buku dan 2 pensil?</p>
+<p>Jawaban:</p>
+<p>Buku = x</p>
+<p>Pensil = y</p>
+<p>Andi: 2x+2y=20.000</p>
+<p>Budi: 3x+4y=35.000</p>
+<p>Cindy: 3x+2y = ?</p>
+<p>Untuk menyelesaikan persoalan ini bisa diselesaikan dengan metode eliminasi. Caranya adalah sebagai berikut:</p>
+<p>2x+2y=20.000</p>
+<p>3x+4y=35.000</p>
+<p>Untuk menghilangkan variabel x maka kita harus mengalikan 3 untuk persamaan pertama dan 2 untuk persamaan kedua.</p>
+<p>2x+2y=20.000 | x 3</p>
+<p>3x+4y=35.000 | x 2</p>
+<p>6x+6y=60.000</p>
+<p>6x+8y=70.000</p>
+<p>Setelah itu kurangkan keduanya. Maka menghasilkan seperti ini</p>
+<p>6x+6y=60.000</p>
+<p>6x+8y=70.000</p>
+<p>-2y = -10.000</p>
+<p>y = -10.000/-2</p>
+<p>y = 5.000</p>
+<p>Kemudian untuk mencari nilai x bisa menggunakan metode substitusi yaitu dengan cara berikut ini:</p>
+<p>2x+2y= 20.000</p>
+<p>2x+2(5.000) = 20.000</p>
+<p>2x+10.000 = 20.000</p>
+<p>2x= 20.000-10.000</p>
+<p>2x= 10.000</p>
+<p>x= 10.000/2</p>
+<p>x=5.000</p>
+<p>Maka harga buku (x) adalah Rp5.000 dan harga pensil (y) adalah Rp.5000. Untuk menjawab biaya yang harus dikeluarkan Cindy maka dapat dikerjakan seperti ini:</p>
+<p>3x+2y = ?</p>
+<p>3(5.000)+2(5.000) = ?</p>
+<p>15.000+10.000 = 25.000</p>
+<p>Maka uang yang harus dikeluarkan oleh Cindy untuk membeli 3 buku dan 2 pensil adalah Rp25.000.</p>
+<p>Andi membeli 2 kg jeruk, 2 kg apel, dan 1 kg jambu dengan harga Rp70.000. Kemudian Budi membeli 1 kg jeruk, 2 kg apel, dan 2 kg jambu dengan harga Rp90.000. Kemudian Cindy membeli 2 kg jeruk, 2 kg apel, dan 3 kg jambu dengan harga Rp130.000. Berapakah uang yang harus dibayarkan oleh Dedi jika dia membeli 1 kg jeruk, 2 kg apel, dan 3 kg jambu?</p>
+<p>Jawaban:</p>
+<p>x : jeruk</p>
+<p>y : apel</p>
+<p>z : jambu</p>
+<p>Andi: 2x + 2y + z = 70.000</p>
+<p>Budi: x + 2y + 2z = 90.000</p>
+<p>Cindi: 2x + 2y + 3z = 130.000</p>
+<p>Dedi: x + 2y + 3z = ?</p>
+<p>2x + 2y + z = 70.000</p>
+<p>x + 2y + 2z = 90.000</p>
+<p>x - z = -20.000</p>
+<p>2x + 2y + z = 70.000</p>
+<p>2x + 2y + 3z = 130.000</p>
+<p>-2z = - 60.000</p>
+<p>Z = 30.000</p>
+<p>Masukan nilai z ke persamaan sebelumnya:</p>
+<p>x – z = - 20.000</p>
+<p>x – 30.000 = - 20.000</p>
+<p>x = -20.000 + 30.000</p>
+<p>x = 10.000</p>
+<p>Maka telah ditemukan bahwa nilai x adalah 10.000 dan nilai z adalah 30.000. Jika sudah ditemukan kedua nilai tersebut, maka kita hanya perlu memasukan ke salah satu persamaan.</p>
+<p>2x + 2y + z = 70.000</p>
+<p>2(10.000) + 2y + 30.000 = 70.000</p>
+<p>20.000 + 2y + 30.000 = 70.000</p>
+<p>50.000 + 2y = 70.000</p>
+<p>2y = 70.000 – 50.000</p>
+<p>2y = 20.000</p>
+<p>y = 20.000/2</p>
+<p>y = 10.000</p>
+<p>Maka harga dari jeruk adalah Rp10.000, harga apel Rp10.000, dan harga jambu Rp30.000 per kg. Sedangkan uang yang harus dikeluarkan Dedi berarti:</p>
+<p>x + 2y + 3z = ?</p>
+<p>10.000 + 2(10.000) + 3(30.000) = ?</p>
+<p>10.000 + 20.000 + 90.000 = 120.000</p>
+<p>Maka uang yang harus dikeluarkan Dedi adalah Rp120.000,-</p>
+<p>Demikian pembahasan mengenai pengertian, sifat, dan contoh-contoh persamaan linear. Materi persamaan linear ini tentu akan diajarkan di Sampoerna Academy.</p>
+<p>Bergabunglah dengan Sampoerna Academy, di mana kami menggunakan kurikulum matematika Singapura yang terkenal secara global. Kami memastikan bahwa setiap siswa memiliki landasan matematika yang kuat, memberikan mereka keunggulan kompetitif untuk mencapai kesuksesan di masa depan dengan menggunakan metode yang terbukti berhasil. Jangan lewatkan kesempatan ini untuk memberikan yang terbaik untuk masa depan anak Anda dalam pendidikan dan karir. Informasi lebih lanjut terkait pendaftaran, metode pengajaran, dan fasilitas yang tersedia, silakan klik pada tautan yang dilampirkan. Jadwalkan kunjungan bersama putra/putri tercinta ke Sampoerna Academy terdekat.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengertian persamaan Linear</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-persamaan-linear">Sifat Persamaan Linear</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear">Jenis-jenis Persamaan Linear</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=8878045cc6db502f8baf"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=8878045cc6db502f8baf"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Welcome to your Komputasi Aljabar Linear
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Selamat datang di website Materi Komputasi Aljabar Linear 
 
-Check out the content pages bundled with this sample book to see more.
+Diwebsite ini saya akan merangkung seluruh materi yang kami peroleh di kelas Komputasi Aljabar Linear sebelumnya Perkenalkan Nama saya Ahmad Dafi Zidni Alfarisi Nim :240411100027 prodi Teknik Informatika Universitas Trunojoyo Madura
 
-```{tableofcontents}
-```
+Enjoy The Website
+
+
+
