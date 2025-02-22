@@ -1,4 +1,4 @@
-# Welcome to your Komputasi Aljabar Linear
+# Welcome to your KAL
 
 Selamat datang di website Materi Komputasi Aljabar Linear 
 

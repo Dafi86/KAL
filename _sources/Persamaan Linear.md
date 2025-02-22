@@ -1,9 +1,9 @@
 ---
-title: '#KAL'
+title: 'Pengertian Linear'
 
 ---
 
-# Pengertian persamaan Linear
+# Pengertian Persamaan Linear
 
 Pengertian persamaan Linear merupakan salah satu persamaan dari ilmu aljabar di mana persamaan ini sukunya mengandung konstanta dengan variabel tunggal. Mengapa disebut linear, karena hubungan hubungan matematis ini digambarkan dengan garis lurus dalam sistem koordinat kartesius.
 
