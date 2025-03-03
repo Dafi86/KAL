@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Pengertian Persamaan Linear &#8212; 24-027_Ahmad Dafi Zidni Alfarisi/title>
+    <title>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra &#8212; My sample book</title>
   
   
   
@@ -60,10 +60,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'Persamaan Linear';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'geobra';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="Welcome to your KAL" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -114,6 +113,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -167,8 +168,8 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Pengertian Persamaan Linear</a></li>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="Persamaan%20Linear.html">Pengertian Persamaan Linear</a></li>
 
 
 </ul>
@@ -247,7 +248,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FPersamaan Linear.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgeobra.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -277,7 +278,7 @@
       
       
       
-      <li><a href="_sources/Persamaan Linear.md" target="_blank"
+      <li><a href="_sources/geobra.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -353,7 +354,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Pengertian Persamaan Linear</h1>
+    <h1>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -363,11 +364,14 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengertian Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-persamaan-linear">Sifat Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear">Jenis-jenis Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-metode-eliminasi-gauss">2. Langkah-langkah Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">3. Contoh Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-augmented">4. Menyusun Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-solusi">6. Menentukan Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-dengan-geogebra">7. Visualisasi dengan GeoGebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">8. Kesimpulan</a></li>
 </ul>
-
             </nav>
         </div>
     </div>
@@ -378,187 +382,74 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="pengertian-persamaan-linear">
-<h1>Pengertian Persamaan Linear<a class="headerlink" href="#pengertian-persamaan-linear" title="Link to this heading">#</a></h1>
-<p>Pengertian persamaan Linear merupakan salah satu persamaan dari ilmu aljabar di mana persamaan ini sukunya mengandung konstanta dengan variabel tunggal. Mengapa disebut linear, karena hubungan hubungan matematis ini digambarkan dengan garis lurus dalam sistem koordinat kartesius.</p>
-<p>Persamaan linear memiliki lawan, yaitu pertidaksamaan linear. Namun, pada kesempatan ini kita akan membahas soal persamaan linear.</p>
-<p>Sebelum masuk ke pembahasan lebih jauh. Kita bahas lebih dulu mengenai definisi variabel, koefisien, konstanta, dan suku.</p>
-<p><strong>Koefisien:</strong> bilangan yang menjabarkan jumlah variabel yang sejenis. Koefisien ini terletak di depan variabel.
-<strong>Variabel:</strong> Pengganti bilangan yang belum diketahui nilainya. Variabel biasanya dilambangkan dengan huruf-huruf seperti a,b,c dan yang lain sebagainya.
-<strong>Konstanta:</strong> Nilai bilangan konstan yang tidak diikuti variabel di belakangnya.
-<strong>Suku:</strong> Bagian dari suatu persamaan yang terdiri dari variabel, koefisien, dan konstanta</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="penyelesaian-sistem-persamaan-linear-dengan-metode-eliminasi-gauss-dan-visualisasi-dengan-geogebra">
+<h1>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear-dengan-metode-eliminasi-gauss-dan-visualisasi-dengan-geogebra" title="Link to this heading">#</a></h1>
+<section id="pendahuluan">
+<h2>1. Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan linear adalah kumpulan persamaan yang memiliki beberapa variabel, di mana setiap persamaan berbentuk linear. Salah satu metode untuk menyelesaikan sistem persamaan linear adalah Metode Eliminasi Gauss.</p>
+<p>Metode Eliminasi Gauss bertujuan untuk menyederhanakan sistem persamaan ke dalam bentuk segitiga atas (eselon baris), sehingga penyelesaiannya lebih mudah ditemukan dengan substitusi balik.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="sifat-persamaan-linear">
-<h1>Sifat Persamaan Linear<a class="headerlink" href="#sifat-persamaan-linear" title="Link to this heading">#</a></h1>
-<p>Ada beberapa sifat-sifat yang dimiliki oleh persamaan linear, yaitu sebagai berikut:</p>
-<p>Penjumlahan dan pengurangan bilangan kedua ruas tak akan mengubah persamaan nilai.
-Perkalian dan pembagian bilangan kedua ruas tidak mengubah nilai persamaan
-Nilai persamaan tidak berubah jika kedua ruas ditambah atau dikurangi bilangan yang sama.
-Suatu persamaan jika dipindah ruas maka penjumlahan berubah jadi pengurangan, perkalian berubah menjadi pembagian, dan sebaliknya.</p>
+<section id="langkah-langkah-metode-eliminasi-gauss">
+<h2>2. Langkah-langkah Metode Eliminasi Gauss<a class="headerlink" href="#langkah-langkah-metode-eliminasi-gauss" title="Link to this heading">#</a></h2>
+<p>Menyusun Matriks Augmented</p>
+<p>Tuliskan sistem persamaan dalam bentuk matriks yang mencakup koefisien variabel dan nilai konstanta.
+Mengubah Matriks ke Bentuk Eselon Baris</p>
+<p>Gunakan operasi baris elementer untuk membuat nol di bawah elemen diagonal utama.
+Menyelesaikan dengan Substitusi Balik</p>
+<p>Setelah matriks berbentuk segitiga atas, nilai variabel dapat ditemukan dengan substitusi balik.</p>
 </section>
-<section class="tex2jax_ignore mathjax_ignore" id="jenis-jenis-persamaan-linear">
-<h1>Jenis-jenis Persamaan Linear<a class="headerlink" href="#jenis-jenis-persamaan-linear" title="Link to this heading">#</a></h1>
-<p><strong>1. Persamaan Linear Satu Variabel</strong>
-Sesuai dengan namanya, persamaan linear satu variabel hanya mengandung satu variabel berpangkat 1 yang berbentuk kalimat terbuka dengan dihubungkan tanda =.</p>
-<p>Kalimat terbuka di sini berarti adalah kalimat yang belum tahu kebenaranya atau bisa jadi benar, bisa jadi juga salah.</p>
-<p>Bentuk umum dari Persamaan Linear Satu Variabel adalah:</p>
-<p>ax + b = 0</p>
-<p>Keterangan:</p>
-<p>a = koefisien</p>
-<p>b = konstanta</p>
-<p>x = variabel</p>
-<p>a dan b adalah bilangan riil</p>
-<p>a dan b bukan nol</p>
-<p>Namun, yang perlu digaris bawahi adalah variabel tidak selalu menggunakan lambang x, bisa jadi menggunakan y atau yang lainnya.</p>
-<p>Contoh sederhana:</p>
-<p>10x + 2 = 22</p>
-<p>x = 22-2/10</p>
-<p>x = 2</p>
-<p>Maka nilai dari huruf x adalah 2.</p>
-<p><strong>2. Persamaan Linear Dua Variabel</strong>
-Sesuai dengan namanya, Persamaan Linear Dua Variabel merupakan sistem persamaan dengan variabel yang berjumlah dua dengan berpangkat 1. Persamaan linear dua variabel menggunakan relasi = dan tidak ada perkalian variabel di setiap persamaan.</p>
-<p>Tanpa disadari Persamaan Linear Dua Variabel ini biasanya digunakan untuk menyelesaikan masalah sederhana di kehidupan sehari-hari terutama dalam aktivitas jual beli. Biasanya persamaan ini digunakan untuk mencari keuntungan.</p>
-<p>Bentuk umum dari Persamaan Linear Dua Variabel adalah:</p>
-<p>ax + by = c</p>
-<p>Persamaan Linear Dua Variabel bisa diselesaikan dengan dua metode, yaitu metode substitusi dan metode eliminasi.</p>
-<p>Metode Substitusi digunakan dengan cara mengubah satu variabel dengan variabel persamaan lain. Sedangkan Metode Eliminasi dengan cara menghapus salah satu variabel dalam persamaan.</p>
-<p>Contoh sederhana:</p>
-<p>2x+4y = 12</p>
-<p>2x+2y = 8</p>
-<p>Berapa nilai x dan y?</p>
-<p>Penyelesaian:</p>
-<p>Persamaan tersebut bisa diselesaikan dengan metode substitusi. Yaitu dengan cara pertama memilih salah satu persamaan.</p>
-<p>2x+4y = 12</p>
-<p>Kemudian kita pindahkan satu variabel ke ruas lainnya.</p>
-<p>2x=12-4y</p>
-<p>Untuk menghilangkan variabel x maka dibagi dengan nilai koefisien x.</p>
-<p>2x/2 = 12-4y/2</p>
-<p>x = 6 – 2y</p>
-<p>Jadi nilai x untuk sementara adalah 6-2y. Kemudian untuk mencari nilai y masukan ke dalam persamaan kedua.</p>
-<p>2x+2y = 8</p>
-<p>2(6-2y) + 2y = 8</p>
-<p>12-4y+2y = 8</p>
-<p>-2y = 8-12</p>
-<p>-2y = -4</p>
-<p>Untuk menghilangkan variabel ya maka dibagi dengan nilai koefisien y.</p>
-<p>-2y/-2 = -4/-2</p>
-<p>y = 2</p>
-<p>Setelah nilai y ditemukan kemudian masukan ke nilai x sementara tadi.</p>
-<p>x =.6-2y</p>
-<p>x = 6-2(2)</p>
-<p>x = 2.</p>
-<p><strong>3. Persamaan Linear Tiga Variabel</strong>
-Persamaan linear tiga variabel merupakan bentuk perluasan dari persamaan linear dua variabel. Sama seperti persamaan linear dua variabel, persamaan ini juga bisa diselesaikan dengan dua metode, yaitu substitusi dan eliminasi.</p>
-<p>Sistem ini biasanya digunakan untuk menentukan titik potong dan hal itu bermanfaat dalam hal seperti mendirikan bangunan supaya lebih presisi.</p>
-<p>Bentuk umum persamaan linear tiga variabel adalah:</p>
-<p>ax + by + cz = d</p>
-<p>Contoh sederhana:</p>
-<p>x + y + z = 8</p>
-<p>x + 2y + 2z = 14</p>
-<p>2x + y + 2z = 13</p>
-<p>Penyelesaian:</p>
-<p>x + y + z = 8</p>
-<p>Karena nilai koefisien dari x tidak ada, maka kita hanya perlu memindah dua variabel ke kanan.</p>
-<p>z = 8 – x – y</p>
-<p>Kemudian masukan persamaan salah satu persamaan.</p>
-<p>x + 2y + 2 (8 – x – y) = 14</p>
-<p>x + 2y +16 – 2x – 2y = 14</p>
-<p>-x + 16 = 14</p>
-<p>-x = 14-16</p>
-<p>-x = -2</p>
-<p>x = 2</p>
-<p>Setelah nilai x ditemukan nilai 2 masukan ke persamaan lainnya untuk menentukan y.</p>
-<p>2x + y + 2z = 13</p>
-<p>2(2) + y + 2(8 – 2 – y) =. 13</p>
-<p>4 + y + 16 – 4 – 2y = 13</p>
-<p>20 – 4 – y = 13</p>
-<p>16 – y = 13</p>
-<p>-y = 13-16</p>
-<p>-y = -3</p>
-<p>y = 3</p>
-<p>Kemudian untuk menentukan nilai z, masukan nilai x dan y ke nilai z sementara tadi.</p>
-<p>z = 8 – x – y</p>
-<p>z = 8 – 2 – 3</p>
-<p>z = 3</p>
-<p>Maka nilai x = 2, nilai y = 3, dan nilai z =</p>
-<p><strong>Contoh Soal Persamaan Linear</strong>
-Si A membeli sebuah roti dengan harga Rp5.000. Berapa jumlah roti yang bisa dibeli oleh Si A jika dia membawa uang Rp50.000 dan ingin dihabiskan seluruhnya?</p>
-<p>Jawaban:</p>
-<p>5000x = 50000</p>
-<p>x = 50000/5000</p>
-<p>x = 10</p>
-<p>Maka jumlah roti yang bisa dibeli oleh A adalah 10 potong.</p>
-<p>Andi membeli 2 buku dan 2 pensil dengan harga Rp20.000. Kemudian Budi membeli 3 buku dan 3 pensil dengan harga Rp30.000. Maka berapakah Cindy harus membayar jika dia membeli 3 buku dan 2 pensil?</p>
-<p>Jawaban:</p>
-<p>Buku = x</p>
-<p>Pensil = y</p>
-<p>Andi: 2x+2y=20.000</p>
-<p>Budi: 3x+4y=35.000</p>
-<p>Cindy: 3x+2y = ?</p>
-<p>Untuk menyelesaikan persoalan ini bisa diselesaikan dengan metode eliminasi. Caranya adalah sebagai berikut:</p>
-<p>2x+2y=20.000</p>
-<p>3x+4y=35.000</p>
-<p>Untuk menghilangkan variabel x maka kita harus mengalikan 3 untuk persamaan pertama dan 2 untuk persamaan kedua.</p>
-<p>2x+2y=20.000 | x 3</p>
-<p>3x+4y=35.000 | x 2</p>
-<p>6x+6y=60.000</p>
-<p>6x+8y=70.000</p>
-<p>Setelah itu kurangkan keduanya. Maka menghasilkan seperti ini</p>
-<p>6x+6y=60.000</p>
-<p>6x+8y=70.000</p>
-<p>-2y = -10.000</p>
-<p>y = -10.000/-2</p>
-<p>y = 5.000</p>
-<p>Kemudian untuk mencari nilai x bisa menggunakan metode substitusi yaitu dengan cara berikut ini:</p>
-<p>2x+2y= 20.000</p>
-<p>2x+2(5.000) = 20.000</p>
-<p>2x+10.000 = 20.000</p>
-<p>2x= 20.000-10.000</p>
-<p>2x= 10.000</p>
-<p>x= 10.000/2</p>
-<p>x=5.000</p>
-<p>Maka harga buku (x) adalah Rp5.000 dan harga pensil (y) adalah Rp.5000. Untuk menjawab biaya yang harus dikeluarkan Cindy maka dapat dikerjakan seperti ini:</p>
-<p>3x+2y = ?</p>
-<p>3(5.000)+2(5.000) = ?</p>
-<p>15.000+10.000 = 25.000</p>
-<p>Maka uang yang harus dikeluarkan oleh Cindy untuk membeli 3 buku dan 2 pensil adalah Rp25.000.</p>
-<p>Andi membeli 2 kg jeruk, 2 kg apel, dan 1 kg jambu dengan harga Rp70.000. Kemudian Budi membeli 1 kg jeruk, 2 kg apel, dan 2 kg jambu dengan harga Rp90.000. Kemudian Cindy membeli 2 kg jeruk, 2 kg apel, dan 3 kg jambu dengan harga Rp130.000. Berapakah uang yang harus dibayarkan oleh Dedi jika dia membeli 1 kg jeruk, 2 kg apel, dan 3 kg jambu?</p>
-<p>Jawaban:</p>
-<p>x : jeruk</p>
-<p>y : apel</p>
-<p>z : jambu</p>
-<p>Andi: 2x + 2y + z = 70.000</p>
-<p>Budi: x + 2y + 2z = 90.000</p>
-<p>Cindi: 2x + 2y + 3z = 130.000</p>
-<p>Dedi: x + 2y + 3z = ?</p>
-<p>2x + 2y + z = 70.000</p>
-<p>x + 2y + 2z = 90.000</p>
-<p>x - z = -20.000</p>
-<p>2x + 2y + z = 70.000</p>
-<p>2x + 2y + 3z = 130.000</p>
-<p>-2z = - 60.000</p>
-<p>Z = 30.000</p>
-<p>Masukan nilai z ke persamaan sebelumnya:</p>
-<p>x – z = - 20.000</p>
-<p>x – 30.000 = - 20.000</p>
-<p>x = -20.000 + 30.000</p>
-<p>x = 10.000</p>
-<p>Maka telah ditemukan bahwa nilai x adalah 10.000 dan nilai z adalah 30.000. Jika sudah ditemukan kedua nilai tersebut, maka kita hanya perlu memasukan ke salah satu persamaan.</p>
-<p>2x + 2y + z = 70.000</p>
-<p>2(10.000) + 2y + 30.000 = 70.000</p>
-<p>20.000 + 2y + 30.000 = 70.000</p>
-<p>50.000 + 2y = 70.000</p>
-<p>2y = 70.000 – 50.000</p>
-<p>2y = 20.000</p>
-<p>y = 20.000/2</p>
-<p>y = 10.000</p>
-<p>Maka harga dari jeruk adalah Rp10.000, harga apel Rp10.000, dan harga jambu Rp30.000 per kg. Sedangkan uang yang harus dikeluarkan Dedi berarti:</p>
-<p>x + 2y + 3z = ?</p>
-<p>10.000 + 2(10.000) + 3(30.000) = ?</p>
-<p>10.000 + 20.000 + 90.000 = 120.000</p>
-<p>Maka uang yang harus dikeluarkan Dedi adalah Rp120.000,-</p>
-<p>Demikian pembahasan mengenai pengertian, sifat, dan contoh-contoh persamaan linear. Materi persamaan linear ini tentu akan diajarkan di Sampoerna Academy.</p>
-<p>Bergabunglah dengan Sampoerna Academy, di mana kami menggunakan kurikulum matematika Singapura yang terkenal secara global. Kami memastikan bahwa setiap siswa memiliki landasan matematika yang kuat, memberikan mereka keunggulan kompetitif untuk mencapai kesuksesan di masa depan dengan menggunakan metode yang terbukti berhasil. Jangan lewatkan kesempatan ini untuk memberikan yang terbaik untuk masa depan anak Anda dalam pendidikan dan karir. Informasi lebih lanjut terkait pendaftaran, metode pengajaran, dan fasilitas yang tersedia, silakan klik pada tautan yang dilampirkan. Jadwalkan kunjungan bersama putra/putri tercinta ke Sampoerna Academy terdekat.</p>
+<section id="contoh-soal">
+<h2>3. Contoh Soal<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h2>
+<p>Misalkan kita memiliki sistem persamaan berikut:</p>
+<p>2x+y=5
+x−y=1</p>
+<p>Kita akan menyelesaikan sistem ini menggunakan Metode Eliminasi Gauss.</p>
+</section>
+<section id="menyusun-matriks-augmented">
+<h2>4. Menyusun Matriks Augmented<a class="headerlink" href="#menyusun-matriks-augmented" title="Link to this heading">#</a></h2>
+<p>Sistem persamaan di atas dapat dituliskan dalam bentuk matriks augmented:</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/H10CSsMs1g.png" /></p>
+<p>Di sini, kolom pertama dan kedua mewakili koefisien dari variabel x dan y, sedangkan kolom terakhir adalah nilai konstanta.</p>
+<ol class="arabic simple" start="5">
+<li><p>Mengubah Matriks ke Bentuk Eselon Baris
+Langkah 1: Tukar Baris 1 dan Baris 2 (Opsional, agar elemen pertama menjadi 1)</p></li>
+</ol>
+<p><img alt="image" src="https://hackmd.io/_uploads/SkuZIoMjyg.png" /></p>
+<p>Ini dilakukan agar perhitungan lebih sederhana.</p>
+<p>Langkah 2: Eliminasi Elemen di Bawah Elemen Utama Pertama
+Kita buat elemen di bawah elemen pertama (2) menjadi nol dengan operasi:</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/SkO78ofike.png" /></p>
+<p>Perhitungannya:</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/B1_ILjGoyl.png" /></p>
+<p>matriks menjadi:</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/BJvFUiGsyl.png" /></p>
+<p>Langkah 3: Ubah Elemen Diagonal Menjadi 1
+Bagi Baris 2 dengan 3:</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/rJds8sfikx.png" /></p>
+<p>Hasilnya:
+<img alt="image" src="https://hackmd.io/_uploads/S1-aUiMjkg.png" /></p>
+<p>Langkah 4: Eliminasi Elemen di Atas Elemen Utama
+Kita nol-kan elemen di atas 1 pada kolom kedua:</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/r1TCLozi1l.png" /></p>
+<p>Perhitungannya:</p>
+<p><img alt="image" src="https://hackmd.io/_uploads/BkIevozjJl.png" /></p>
+</section>
+<section id="menentukan-solusi">
+<h2>6. Menentukan Solusi<a class="headerlink" href="#menentukan-solusi" title="Link to this heading">#</a></h2>
+<p><img alt="image" src="https://hackmd.io/_uploads/rkS8DsMoyx.png" /></p>
+</section>
+<section id="visualisasi-dengan-geogebra">
+<h2>7. Visualisasi dengan GeoGebra<a class="headerlink" href="#visualisasi-dengan-geogebra" title="Link to this heading">#</a></h2>
+<p><a class="reference external" href="https://www.geogebra.org/calculator/">File GeoGebra</a></p>
+<p><img alt="geobra" src="https://hackmd.io/_uploads/HJu9tsfjJg.png" /></p>
+<p>eq1: x-y=1</p>
+<p>eq2: 2 x+y=5</p>
+</section>
+<section id="kesimpulan">
+<h2>8. Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<p>Metode Eliminasi Gauss adalah cara sistematis untuk menyelesaikan sistem persamaan linear dengan mengubahnya menjadi bentuk segitiga atas. Setelah itu, kita bisa menemukan nilai variabel dengan substitusi balik.</p>
+<p>Visualisasi menggunakan GeoGebra membantu memahami solusi secara grafis dengan melihat titik perpotongan garis.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -591,15 +482,6 @@ Si A membeli sebuah roti dengan harga Rp5.000. Berapa jumlah roti yang bisa dibe
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="intro.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your KAL</p>
-      </div>
-    </a>
 </div>
                 </footer>
               
@@ -617,11 +499,14 @@ Si A membeli sebuah roti dengan harga Rp5.000. Berapa jumlah roti yang bisa dibe
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengertian Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#sifat-persamaan-linear">Sifat Persamaan Linear</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jenis-jenis-persamaan-linear">Jenis-jenis Persamaan Linear</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-metode-eliminasi-gauss">2. Langkah-langkah Metode Eliminasi Gauss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">3. Contoh Soal</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-augmented">4. Menyusun Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-solusi">6. Menentukan Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-dengan-geogebra">7. Visualisasi dengan GeoGebra</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">8. Kesimpulan</a></li>
 </ul>
-
   </nav></div>
 
 </div></div>
