@@ -5,10 +5,10 @@ tags: [matematika, kalkulus, integral, hackmd]
 ---
 
 ---
-title: "Ringkasan Bab 5 - Integral Lipat Dua dan Aplikasinya"
+title: "Ringkasan Bab 5 - Integral Lipat Dua"
 ---
 
-# 📘 Ringkasan Bab 5: Integral Lipat Dua dan Aplikasinya
+# 📘 Ringkasan Bab 5: Integral Lipat Dua 
 
 ## 5.3 Integral Lipat Dua di Daerah Umum
 
