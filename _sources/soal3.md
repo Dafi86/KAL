@@ -6,9 +6,6 @@ tags: [matematika, kalkulus, integral, hackmd]
 
 ---
 title: "Ringkasan Bab 5 - Integral Lipat Dua dan Aplikasinya"
-author: "Disusun untuk GitHub oleh ChatGPT"
-date: "2025"
-tags: [matematika, kalkulus, integral, hackmd]
 ---
 
 # 📘 Ringkasan Bab 5: Integral Lipat Dua dan Aplikasinya
