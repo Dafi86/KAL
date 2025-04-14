@@ -122,9 +122,12 @@ Transformasi matriks adalah bentuk khusus dari transformasi linier yang dapat di
 *Disarikan dari: Bab 5.1, halaman 225–238, buku "Elementary Linear Algebra" oleh Hartman, Fitzpatrick, Stitz & Zeager.*
 
 ---
+
+## soal
 **Penyelesaian Soal Transformasi Matriks (Soal 1, 2, 5, dan 6)**
 
 ---
+
 
 **Soal 1**
 
@@ -136,11 +139,13 @@ y = \begin{bmatrix} -1 \\ 2 \end{bmatrix}
 \]
 
 Hitung hasil transformasi:
+
 \[
-A x = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 1 - 1 \\ 2 + 3 \end{bmatrix} = \begin{bmatrix} 0 \\ 5 \end{bmatrix}
+A x = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 0 \\ 5 \end{bmatrix}
 \]
+
 \[
-A y = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} -1 - 2 \\ -2 + 6 \end{bmatrix} = \begin{bmatrix} -3 \\ 4 \end{bmatrix}
+A y = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} -3 \\ 4 \end{bmatrix}
 \]
 
 ---
@@ -153,10 +158,11 @@ A = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix}
 \]
 
 \[
-A x = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 2 \\ -1 + 3 \end{bmatrix} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}
+A x = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}
 \]
+
 \[
-A y = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2 \\ 1 + 6 \end{bmatrix} = \begin{bmatrix} -2 \\ 7 \end{bmatrix}
+A y = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2 \\ 7 \end{bmatrix}
 \]
 
 ---
@@ -170,7 +176,6 @@ Unit square ditransformasikan menjadi segitiga memanjang:
 Matriks transformasi:
 \[
 A = \begin{bmatrix} 1 & 1 \\ 2 & 3 \end{bmatrix}
-\]
 
 ---
 
@@ -184,6 +189,9 @@ Matriks transformasi:
 \[
 A = \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}
 \]
+
+---
+
 
 
 
