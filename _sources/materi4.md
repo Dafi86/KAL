@@ -123,47 +123,46 @@ Transformasi matriks adalah bentuk khusus dari transformasi linier yang dapat di
 
 ---
 
-## soal
+## 11. soal
 **Penyelesaian Soal Transformasi Matriks (Soal 1, 2, 5, dan 6)**
 
 ---
 
-
 **Soal 1**
 
 Diberikan:
-\[
+$$
 A = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix}, \quad
 x = \begin{bmatrix} 1 \\ 1 \end{bmatrix}, \quad
 y = \begin{bmatrix} -1 \\ 2 \end{bmatrix}
-\]
+$$
 
 Hitung hasil transformasi:
 
-\[
+$$
 A x = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 0 \\ 5 \end{bmatrix}
-\]
+$$
 
-\[
+$$
 A y = \begin{bmatrix} 1 & -1 \\ 2 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} -3 \\ 4 \end{bmatrix}
-\]
+$$
 
 ---
 
 **Soal 2**
 
 Diberikan:
-\[
+$$
 A = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix}
-\]
+$$
 
-\[
+$$
 A x = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix} \begin{bmatrix} 1 \\ 1 \end{bmatrix} = \begin{bmatrix} 2 \\ 2 \end{bmatrix}
-\]
+$$
 
-\[
+$$
 A y = \begin{bmatrix} 2 & 0 \\ -1 & 3 \end{bmatrix} \begin{bmatrix} -1 \\ 2 \end{bmatrix} = \begin{bmatrix} -2 \\ 7 \end{bmatrix}
-\]
+$$
 
 ---
 
@@ -174,8 +173,9 @@ Unit square ditransformasikan menjadi segitiga memanjang:
 - Titik (0, 1) menjadi (1, 3)
 
 Matriks transformasi:
-\[
+$$
 A = \begin{bmatrix} 1 & 1 \\ 2 & 3 \end{bmatrix}
+$$
 
 ---
 
@@ -186,12 +186,11 @@ Unit square berubah ke bentuk yang bergeser dan memutar:
 - Titik (0, 1) menjadi (-1, 1)
 
 Matriks transformasi:
-\[
+$$
 A = \begin{bmatrix} 1 & -1 \\ 1 & 1 \end{bmatrix}
-\]
+$$
 
 ---
-
 
 
 
