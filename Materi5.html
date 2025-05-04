@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra &#8212; My sample book</title>
+    <title>Pembuktian Transformasi Linier &#8212; My sample book</title>
   
   
   
@@ -60,11 +60,9 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'materi1';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Materi5';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Materi: Invers Matriks dan Sistem Persamaan Linear Tiga Variabel" href="materi2.html" />
-    <link rel="prev" title="Pengertian Persamaan Linear" href="Persamaan%20Linear.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -115,6 +113,8 @@
     <div class="bd-container__inner bd-page-width">
       
       
+      
+        
       
       <dialog id="pst-primary-sidebar-modal"></dialog>
       <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
@@ -168,11 +168,11 @@
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="Persamaan%20Linear.html">Pengertian Persamaan Linear</a></li>
 
 
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materi1.html">Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi2.html">Materi: Invers Matriks dan Sistem Persamaan Linear Tiga Variabel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi4.html">Transformasi Matriks (Bab 5.1 dari <em>Elementary Linear Algebra</em>)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="materi5.html">Bukti Transformasi Linier</a></li>
@@ -252,7 +252,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmateri1.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FMateri5.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -282,7 +282,7 @@
       
       
       
-      <li><a href="_sources/materi1.md" target="_blank"
+      <li><a href="_sources/Materi5.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -358,7 +358,7 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra</h1>
+    <h1>Pembuktian Transformasi Linier</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -368,13 +368,10 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-metode-eliminasi-gauss">2. Langkah-langkah Metode Eliminasi Gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">3. Contoh Soal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-augmented">4. Menyusun Matriks Augmented</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-solusi">6. Menentukan Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-dengan-geogebra">7. Visualisasi dengan GeoGebra</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">8. Kesimpulan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-linier">Definisi Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-uji-aditifitas">Langkah 1: Uji Aditifitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-uji-homogenitas">Langkah 2: Uji Homogenitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
 </ul>
             </nav>
         </div>
@@ -386,73 +383,65 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="penyelesaian-sistem-persamaan-linear-dengan-metode-eliminasi-gauss-dan-visualisasi-dengan-geogebra">
-<h1>Penyelesaian Sistem Persamaan Linear dengan Metode Eliminasi Gauss dan Visualisasi dengan GeoGebra<a class="headerlink" href="#penyelesaian-sistem-persamaan-linear-dengan-metode-eliminasi-gauss-dan-visualisasi-dengan-geogebra" title="Link to this heading">#</a></h1>
-<section id="pendahuluan">
-<h2>1. Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan linear adalah kumpulan persamaan yang memiliki beberapa variabel, di mana setiap persamaan berbentuk linear. Salah satu metode untuk menyelesaikan sistem persamaan linear adalah Metode Eliminasi Gauss.</p>
-<p>Metode Eliminasi Gauss bertujuan untuk menyederhanakan sistem persamaan ke dalam bentuk segitiga atas (eselon baris), sehingga penyelesaiannya lebih mudah ditemukan dengan substitusi balik.</p>
-</section>
-<section id="langkah-langkah-metode-eliminasi-gauss">
-<h2>2. Langkah-langkah Metode Eliminasi Gauss<a class="headerlink" href="#langkah-langkah-metode-eliminasi-gauss" title="Link to this heading">#</a></h2>
-<p>Menyusun Matriks Augmented</p>
-<p>Tuliskan sistem persamaan dalam bentuk matriks yang mencakup koefisien variabel dan nilai konstanta.
-Mengubah Matriks ke Bentuk Eselon Baris</p>
-<p>Gunakan operasi baris elementer untuk membuat nol di bawah elemen diagonal utama.
-Menyelesaikan dengan Substitusi Balik</p>
-<p>Setelah matriks berbentuk segitiga atas, nilai variabel dapat ditemukan dengan substitusi balik.</p>
-</section>
-<section id="contoh-soal">
-<h2>3. Contoh Soal<a class="headerlink" href="#contoh-soal" title="Link to this heading">#</a></h2>
-<p>Misalkan kita memiliki sistem persamaan berikut:</p>
-<p>2x+y=5
-x−y=1</p>
-<p>Kita akan menyelesaikan sistem ini menggunakan Metode Eliminasi Gauss.</p>
-</section>
-<section id="menyusun-matriks-augmented">
-<h2>4. Menyusun Matriks Augmented<a class="headerlink" href="#menyusun-matriks-augmented" title="Link to this heading">#</a></h2>
-<p>Sistem persamaan di atas dapat dituliskan dalam bentuk matriks augmented:</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/H10CSsMs1g.png" /></p>
-<p>Di sini, kolom pertama dan kedua mewakili koefisien dari variabel x dan y, sedangkan kolom terakhir adalah nilai konstanta.</p>
-<ol class="arabic simple" start="5">
-<li><p>Mengubah Matriks ke Bentuk Eselon Baris
-Langkah 1: Tukar Baris 1 dan Baris 2 (Opsional, agar elemen pertama menjadi 1)</p></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="pembuktian-transformasi-linier">
+<h1>Pembuktian Transformasi Linier<a class="headerlink" href="#pembuktian-transformasi-linier" title="Link to this heading">#</a></h1>
+<p>Diberikan transformasi berikut:</p>
+<p><strong>T(v1, v2) = (v1 + v2, v1)</strong></p>
+<p>Kita ingin membuktikan bahwa ini adalah transformasi linier, yaitu transformasi yang memenuhi dua sifat penting:</p>
+<hr class="docutils" />
+<section id="definisi-transformasi-linier">
+<h2>Definisi Transformasi Linier<a class="headerlink" href="#definisi-transformasi-linier" title="Link to this heading">#</a></h2>
+<p>Suatu transformasi T disebut linier jika memenuhi dua sifat:</p>
+<ol class="arabic simple">
+<li><p><strong>Aditifitas (Penjumlahan tetap berlaku)</strong><br />
+T(u + v) = T(u) + T(v)</p></li>
+<li><p><strong>Homogenitas (Perkalian skalar tetap berlaku)</strong><br />
+T(c * v) = c * T(v)</p></li>
 </ol>
-<p><img alt="image" src="https://hackmd.io/_uploads/SkuZIoMjyg.png" /></p>
-<p>Ini dilakukan agar perhitungan lebih sederhana.</p>
-<p>Langkah 2: Eliminasi Elemen di Bawah Elemen Utama Pertama
-Kita buat elemen di bawah elemen pertama (2) menjadi nol dengan operasi:</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/SkO78ofike.png" /></p>
-<p>Perhitungannya:</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/B1_ILjGoyl.png" /></p>
-<p>matriks menjadi:</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/BJvFUiGsyl.png" /></p>
-<p>Langkah 3: Ubah Elemen Diagonal Menjadi 1
-Bagi Baris 2 dengan 3:</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/rJds8sfikx.png" /></p>
-<p>Hasilnya:
-<img alt="image" src="https://hackmd.io/_uploads/S1-aUiMjkg.png" /></p>
-<p>Langkah 4: Eliminasi Elemen di Atas Elemen Utama
-Kita nol-kan elemen di atas 1 pada kolom kedua:</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/r1TCLozi1l.png" /></p>
-<p>Perhitungannya:</p>
-<p><img alt="image" src="https://hackmd.io/_uploads/BkIevozjJl.png" /></p>
 </section>
-<section id="menentukan-solusi">
-<h2>6. Menentukan Solusi<a class="headerlink" href="#menentukan-solusi" title="Link to this heading">#</a></h2>
-<p><img alt="image" src="https://hackmd.io/_uploads/rkS8DsMoyx.png" /></p>
+<hr class="docutils" />
+<section id="langkah-1-uji-aditifitas">
+<h2>Langkah 1: Uji Aditifitas<a class="headerlink" href="#langkah-1-uji-aditifitas" title="Link to this heading">#</a></h2>
+<p>Misalkan:</p>
+<ul class="simple">
+<li><p>u = (u1, u2)</p></li>
+<li><p>v = (v1, v2)</p></li>
+</ul>
+<p>Maka:</p>
+<ul class="simple">
+<li><p>u + v = (u1 + v1, u2 + v2)</p></li>
+<li><p>T(u + v) = (u1 + v1 + u2 + v2, u1 + v1)</p></li>
+</ul>
+<p>Sementara:</p>
+<ul class="simple">
+<li><p>T(u) = (u1 + u2, u1)</p></li>
+<li><p>T(v) = (v1 + v2, v1)</p></li>
+</ul>
+<p>T(u) + T(v) = (u1 + u2 + v1 + v2, u1 + v1)</p>
+<p><strong>Karena T(u + v) = T(u) + T(v), sifat aditifitas terpenuhi.</strong></p>
 </section>
-<section id="visualisasi-dengan-geogebra">
-<h2>7. Visualisasi dengan GeoGebra<a class="headerlink" href="#visualisasi-dengan-geogebra" title="Link to this heading">#</a></h2>
-<p><a class="reference external" href="https://www.geogebra.org/calculator/">File GeoGebra</a></p>
-<p><img alt="geobra" src="https://hackmd.io/_uploads/HJu9tsfjJg.png" /></p>
-<p>eq1: x-y=1</p>
-<p>eq2: 2 x+y=5</p>
+<hr class="docutils" />
+<section id="langkah-2-uji-homogenitas">
+<h2>Langkah 2: Uji Homogenitas<a class="headerlink" href="#langkah-2-uji-homogenitas" title="Link to this heading">#</a></h2>
+<p>Misalkan:</p>
+<ul class="simple">
+<li><p>v = (v1, v2)</p></li>
+<li><p>c adalah skalar</p></li>
+</ul>
+<p>Maka:</p>
+<ul class="simple">
+<li><p>c * v = (c * v1, c * v2)</p></li>
+<li><p>T(c * v) = (c * v1 + c * v2, c * v1)</p></li>
+<li><p>T(v) = (v1 + v2, v1)</p></li>
+<li><p>c * T(v) = (c * (v1 + v2), c * v1)</p></li>
+</ul>
+<p><strong>Karena T(c * v) = c * T(v), sifat homogenitas juga terpenuhi.</strong></p>
 </section>
+<hr class="docutils" />
 <section id="kesimpulan">
-<h2>8. Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
-<p>Metode Eliminasi Gauss adalah cara sistematis untuk menyelesaikan sistem persamaan linear dengan mengubahnya menjadi bentuk segitiga atas. Setelah itu, kita bisa menemukan nilai variabel dengan substitusi balik.</p>
-<p>Visualisasi menggunakan GeoGebra membantu memahami solusi secara grafis dengan melihat titik perpotongan garis.</p>
+<h2>Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<p>Karena transformasi T memenuhi dua sifat utama transformasi linier (aditifitas dan homogenitas), maka:</p>
+<p><strong>T(v1, v2) = (v1 + v2, v1) adalah transformasi linier.</strong></p>
 </section>
 </section>
 
@@ -486,24 +475,6 @@ Kita nol-kan elemen di atas 1 pada kolom kedua:</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="Persamaan%20Linear.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Pengertian Persamaan Linear</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="materi2.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Materi: Invers Matriks dan Sistem Persamaan Linear Tiga Variabel</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
@@ -521,13 +492,10 @@ Kita nol-kan elemen di atas 1 pada kolom kedua:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">1. Pendahuluan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-metode-eliminasi-gauss">2. Langkah-langkah Metode Eliminasi Gauss</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-soal">3. Contoh Soal</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menyusun-matriks-augmented">4. Menyusun Matriks Augmented</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#menentukan-solusi">6. Menentukan Solusi</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualisasi-dengan-geogebra">7. Visualisasi dengan GeoGebra</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">8. Kesimpulan</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-transformasi-linier">Definisi Transformasi Linier</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-uji-aditifitas">Langkah 1: Uji Aditifitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-uji-homogenitas">Langkah 2: Uji Homogenitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
 </ul>
   </nav></div>
 
