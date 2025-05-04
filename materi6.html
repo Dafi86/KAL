@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -178,6 +178,7 @@
 <li class="toctree-l1"><a class="reference internal" href="materi4.html">Transformasi Matriks (Bab 5.1 dari <em>Elementary Linear Algebra</em>)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Materi5.html">Pembuktian Transformasi Linier</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">title: Transformasi Refleksi dengan Matriks</a></li>
+
 
 
 
@@ -375,25 +376,18 @@
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">title: Transformasi Refleksi dengan Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">📘 Pendahuluan</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-refleksi-dalam-transformasi-geometri">📌 Apa Itu Refleksi dalam Transformasi Geometri?</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">🎯 Tujuan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#begin-bmatrix-x-y-end-bmatrix">\begin{bmatrix}
-x’ \
-y’
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mengalikan-matriks-dengan-vektor">🧮 Cara Mengalikan Matriks dengan Vektor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-refleksi-titik-2-3">🔄 Contoh Refleksi Titik (2, 3)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-x">1. Refleksi terhadap <strong>sumbu-x</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">2. Refleksi terhadap <strong>sumbu-y</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-garis-y-x">3. Refleksi terhadap <strong>garis y = x</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Refleksi terhadap <strong>garis y = -x</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-titik-asal-0-0">5. Refleksi terhadap <strong>titik asal (0, 0)</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mengalikan-matriks-dengan-vektor">🧮 Cara Mengalikan Matriks dengan Vektor</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-refleksi-titik-2-3">🔄 Contoh Refleksi Titik (2, 3)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-x">1. Refleksi terhadap <strong>sumbu-x</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">2. Refleksi terhadap <strong>sumbu-y</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-garis-y-x">3. Refleksi terhadap <strong>garis y = x</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Refleksi terhadap <strong>garis y = -x</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-titik-asal-0-0">5. Refleksi terhadap <strong>titik asal (0, 0)</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">✅ Kesimpulan</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">✅ Kesimpulan</a></li>
 </ul>
 
             </nav>
@@ -409,9 +403,7 @@ y’
   <hr class="docutils" />
 <section id="title-transformasi-refleksi-dengan-matriks">
 <h1>title: Transformasi Refleksi dengan Matriks<a class="headerlink" href="#title-transformasi-refleksi-dengan-matriks" title="Link to this heading">#</a></h1>
-</section>
-<section id="pendahuluan">
-<h1>📘 Pendahuluan<a class="headerlink" href="#pendahuluan" title="Link to this heading">#</a></h1>
+<p>📘 Pendahuluan</p>
 <p>Pada dokumen ini, kita akan mempelajari bagaimana transformasi refleksi bekerja dalam konteks geometri dan bagaimana menerapkannya menggunakan matriks. Refleksi merupakan salah satu jenis transformasi linier penting dalam matematika dan grafika komputer.</p>
 <hr class="docutils" />
 </section>
@@ -423,20 +415,24 @@ y’
 <section id="tujuan">
 <h1>🎯 Tujuan<a class="headerlink" href="#tujuan" title="Link to this heading">#</a></h1>
 <p>Diberikan titik <span class="math notranslate nohighlight">\((x, y)\)</span>, kita ingin mencari hasil refleksinya <span class="math notranslate nohighlight">\((x', y')\)</span> dengan menggunakan:</p>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="begin-bmatrix-x-y-end-bmatrix">
-<h1>\begin{bmatrix}
-x’ \
-y’
-\end{bmatrix}<a class="headerlink" href="#begin-bmatrix-x-y-end-bmatrix" title="Link to this heading">#</a></h1>
-<p>\begin{bmatrix}
-x \
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix}
+=
+M \cdot
+\begin{bmatrix}
+x \\
 y
-\end{bmatrix}</p>
+\end{bmatrix}
+\end{split}\]</div>
 <p>di mana <span class="math notranslate nohighlight">\(M\)</span> adalah matriks transformasi refleksi.</p>
 <hr class="docutils" />
+</section>
 <section id="cara-mengalikan-matriks-dengan-vektor">
-<h2>🧮 Cara Mengalikan Matriks dengan Vektor<a class="headerlink" href="#cara-mengalikan-matriks-dengan-vektor" title="Link to this heading">#</a></h2>
+<h1>🧮 Cara Mengalikan Matriks dengan Vektor<a class="headerlink" href="#cara-mengalikan-matriks-dengan-vektor" title="Link to this heading">#</a></h1>
 <p>Misalkan:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -452,14 +448,14 @@ a \cdot x + b \cdot y \\
 c \cdot x + d \cdot y
 \end{bmatrix}
 \end{split}\]</div>
-</section>
 <hr class="docutils" />
+</section>
 <section id="contoh-refleksi-titik-2-3">
-<h2>🔄 Contoh Refleksi Titik (2, 3)<a class="headerlink" href="#contoh-refleksi-titik-2-3" title="Link to this heading">#</a></h2>
+<h1>🔄 Contoh Refleksi Titik (2, 3)<a class="headerlink" href="#contoh-refleksi-titik-2-3" title="Link to this heading">#</a></h1>
 <p>Kita ambil contoh titik <span class="math notranslate nohighlight">\((2, 3)\)</span>, dan kita coba refleksikan terhadap beberapa garis berikut ini:</p>
 <hr class="docutils" />
 <section id="refleksi-terhadap-sumbu-x">
-<h3>1. Refleksi terhadap <strong>sumbu-x</strong><a class="headerlink" href="#refleksi-terhadap-sumbu-x" title="Link to this heading">#</a></h3>
+<h2>1. Refleksi terhadap <strong>sumbu-x</strong><a class="headerlink" href="#refleksi-terhadap-sumbu-x" title="Link to this heading">#</a></h2>
 <p>Matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -475,7 +471,7 @@ M = \begin{bmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix}
 </section>
 <hr class="docutils" />
 <section id="refleksi-terhadap-sumbu-y">
-<h3>2. Refleksi terhadap <strong>sumbu-y</strong><a class="headerlink" href="#refleksi-terhadap-sumbu-y" title="Link to this heading">#</a></h3>
+<h2>2. Refleksi terhadap <strong>sumbu-y</strong><a class="headerlink" href="#refleksi-terhadap-sumbu-y" title="Link to this heading">#</a></h2>
 <p>Matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -489,7 +485,7 @@ M \cdot \begin{bmatrix} 2 \\ 3 \end{bmatrix} = \begin{bmatrix} -2 \\ 3 \end{bmat
 </section>
 <hr class="docutils" />
 <section id="refleksi-terhadap-garis-y-x">
-<h3>3. Refleksi terhadap <strong>garis y = x</strong><a class="headerlink" href="#refleksi-terhadap-garis-y-x" title="Link to this heading">#</a></h3>
+<h2>3. Refleksi terhadap <strong>garis y = x</strong><a class="headerlink" href="#refleksi-terhadap-garis-y-x" title="Link to this heading">#</a></h2>
 <p>Matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -503,7 +499,7 @@ M = \begin{bmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end{bmatrix}
 </section>
 <hr class="docutils" />
 <section id="id1">
-<h3>4. Refleksi terhadap <strong>garis y = -x</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<h2>4. Refleksi terhadap <strong>garis y = -x</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
 <p>Matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -517,7 +513,7 @@ M = \begin{bmatrix} 0 &amp; -1 \\ -1 &amp; 0 \end{bmatrix}
 </section>
 <hr class="docutils" />
 <section id="refleksi-terhadap-titik-asal-0-0">
-<h3>5. Refleksi terhadap <strong>titik asal (0, 0)</strong><a class="headerlink" href="#refleksi-terhadap-titik-asal-0-0" title="Link to this heading">#</a></h3>
+<h2>5. Refleksi terhadap <strong>titik asal (0, 0)</strong><a class="headerlink" href="#refleksi-terhadap-titik-asal-0-0" title="Link to this heading">#</a></h2>
 <p>Matriks:</p>
 <div class="math notranslate nohighlight">
 \[\begin{split}
@@ -528,14 +524,13 @@ M = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix}
 \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix} \cdot \begin{bmatrix} 2 \\ 3 \end{bmatrix} = \begin{bmatrix} -2 \\ -3 \end{bmatrix}
 \end{split}\]</div>
 <p>✅ Hasil: <strong>(-2, -3)</strong></p>
-</section>
-</section>
 <hr class="docutils" />
+</section>
+</section>
 <section id="kesimpulan">
-<h2>✅ Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h2>
+<h1>✅ Kesimpulan<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h1>
 <p>Transformasi refleksi dapat dihitung dengan cara mengalikan vektor posisi dengan matriks refleksi yang sesuai. Setiap jenis refleksi memiliki bentuk matriks yang berbeda, tetapi prinsip perhitungannya tetap sama: menggunakan perkalian matriks biasa.</p>
 <p>Semoga penjelasan ini membantu memahami konsep refleksi secara visual dan matematis!</p>
-</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -595,25 +590,18 @@ M = \begin{bmatrix} -1 &amp; 0 \\ 0 &amp; -1 \end{bmatrix}
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">title: Transformasi Refleksi dengan Matriks</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pendahuluan">📘 Pendahuluan</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#apa-itu-refleksi-dalam-transformasi-geometri">📌 Apa Itu Refleksi dalam Transformasi Geometri?</a></li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tujuan">🎯 Tujuan</a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#begin-bmatrix-x-y-end-bmatrix">\begin{bmatrix}
-x’ \
-y’
-\end{bmatrix}</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mengalikan-matriks-dengan-vektor">🧮 Cara Mengalikan Matriks dengan Vektor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-refleksi-titik-2-3">🔄 Contoh Refleksi Titik (2, 3)</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-x">1. Refleksi terhadap <strong>sumbu-x</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">2. Refleksi terhadap <strong>sumbu-y</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-garis-y-x">3. Refleksi terhadap <strong>garis y = x</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Refleksi terhadap <strong>garis y = -x</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-titik-asal-0-0">5. Refleksi terhadap <strong>titik asal (0, 0)</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#cara-mengalikan-matriks-dengan-vektor">🧮 Cara Mengalikan Matriks dengan Vektor</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-refleksi-titik-2-3">🔄 Contoh Refleksi Titik (2, 3)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-x">1. Refleksi terhadap <strong>sumbu-x</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-sumbu-y">2. Refleksi terhadap <strong>sumbu-y</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-garis-y-x">3. Refleksi terhadap <strong>garis y = x</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">4. Refleksi terhadap <strong>garis y = -x</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi-terhadap-titik-asal-0-0">5. Refleksi terhadap <strong>titik asal (0, 0)</strong></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">✅ Kesimpulan</a></li>
-</ul>
-</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">✅ Kesimpulan</a></li>
 </ul>
 
   </nav></div>

@@ -1,5 +1,5 @@
 ---
-title: Transformasi Refleksi dengan Matriks
+title: materi6
 
 ---
 
@@ -7,7 +7,7 @@ title: Transformasi Refleksi dengan Matriks
 
 ## title: Transformasi Refleksi dengan Matriks
 
-## 📘 Pendahuluan
+📘 Pendahuluan
 
 Pada dokumen ini, kita akan mempelajari bagaimana transformasi refleksi bekerja dalam konteks geometri dan bagaimana menerapkannya menggunakan matriks. Refleksi merupakan salah satu jenis transformasi linier penting dalam matematika dan grafika komputer.
 
@@ -23,18 +23,18 @@ Refleksi adalah salah satu jenis transformasi linier yang "memantulkan" titik te
 
 Diberikan titik $(x, y)$, kita ingin mencari hasil refleksinya $(x', y')$ dengan menggunakan:
 
-
+$$
 \begin{bmatrix}
 x' \\
 y'
 \end{bmatrix}
 =
-
+M \cdot
 \begin{bmatrix}
 x \\
 y
 \end{bmatrix}
-
+$$
 
 di mana $M$ adalah matriks transformasi refleksi.
 
