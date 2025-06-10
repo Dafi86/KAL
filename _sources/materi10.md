@@ -1,171 +1,123 @@
 ---
-title: perkalian silang
+title: materi10
 
 ---
 
-#  Materi Ringkasan Perkalian Silang (Cross Product)
+
+# 📘 Materi Ringkasan Perkalian Silang (Cross Product)
 
 ## 🔹 Pengertian Perkalian Silang
 Perkalian silang adalah operasi antara dua **vektor dalam ruang tiga dimensi (3D)** yang menghasilkan vektor baru yang **tegak lurus** terhadap kedua vektor asal.
 
 Jika diberikan:
-\[
-\vec{u} = \begin{bmatrix} u_1 \\ u_2 \\ u_3 \end{bmatrix}, \quad
-\vec{v} = \begin{bmatrix} v_1 \\ v_2 \\ v_3 \end{bmatrix}
-\]
 
-Maka:
-\[
-\vec{u} \times \vec{v} =
-\begin{bmatrix}
-u_2 v_3 - u_3 v_2 \\
-u_3 v_1 - u_1 v_3 \\
-u_1 v_2 - u_2 v_1
-\end{bmatrix}
-\]
+```
+u = [u1, u2, u3]
+v = [v1, v2, v3]
+```
 
-Vektor hasil ini **tegak lurus** terhadap \( \vec{u} \) dan \( \vec{v} \), dan panjangnya sama dengan **luas jajaran genjang** yang dibentuk oleh kedua vektor.
+Maka hasil cross product:
+
+```
+u × v = [
+    u2 * v3 - u3 * v2,
+    u3 * v1 - u1 * v3,
+    u1 * v2 - u2 * v1
+]
+```
 
 ---
 
 ## 🔹 Luas Jajaran Genjang
-Jika dua vektor \( \vec{u} \) dan \( \vec{v} \) membentuk sisi jajaran genjang, maka luasnya adalah:
+Jika dua vektor **u** dan **v** membentuk sisi jajaran genjang, maka luasnya:
 
-\[
-L = |\vec{u} \times \vec{v}|
-\]
+```
+L = ||u × v||
+```
 
 ---
 
 ## 🔹 Luas Segitiga
-Jika tiga titik \( A, B, C \) diberikan, maka:
-1. Hitung dua vektor:  
-\[
-\vec{AB} = \vec{B} - \vec{A}, \quad \vec{AC} = \vec{C} - \vec{A}
-\]
+Jika tiga titik A, B, dan C diberikan:
 
-2. Hitung vektor silang \( \vec{AB} \times \vec{AC} \)
+1. Hitung dua vektor:
+```
+AB = B - A
+AC = C - A
+```
 
-3. Panjang vektor silang adalah dua kali luas segitiga:
-\[
-\text{Luas segitiga} = \frac{1}{2} |\vec{AB} \times \vec{AC}|
-\]
+2. Hitung cross product:
+```
+AB × AC
+```
+
+3. Luas segitiga:
+```
+L = 1/2 * ||AB × AC||
+```
 
 ---
 
-# Penyelesaian Soal
+# 📝 Penyelesaian Soal
 
 ## Soal 1
-Tentukan luas jajaran genjang dari:
-\[
-\vec{u} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad
-\vec{v} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}
-\]
+```
+u = [1, 2, 0]
+v = [2, 1, 0]
 
-Kita tambahkan koordinat z = 0 untuk membuatnya 3D:
-\[
-\vec{u} = (1, 2, 0), \quad \vec{v} = (2, 1, 0)
-\]
-
-Hitung:
-\[
-\vec{u} \times \vec{v} = 
-\begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-1 & 2 & 0 \\
-2 & 1 & 0
-\end{vmatrix} = (0, 0, 1\cdot1 - 2\cdot2) = (0, 0, -3)
-\]
-
-Luas:
-\[
-L = |\vec{u} \times \vec{v}| = \sqrt{0^2 + 0^2 + (-3)^2} = 3
-\]
-
- **Jawaban: 3**
+u × v = [0, 0, -3]
+Luas = ||[0, 0, -3]|| = 3
+```
+✅ **Jawaban: 3**
 
 ---
 
 ## Soal 2
-\[
-\vec{u} = \begin{bmatrix} 2 \\ 0 \end{bmatrix}, \quad
-\vec{v} = \begin{bmatrix} 0 \\ 3 \end{bmatrix}
-\]
+```
+u = [2, 0, 0]
+v = [0, 3, 0]
 
-Tambahkan z = 0:
-\[
-\vec{u} = (2, 0, 0), \quad \vec{v} = (0, 3, 0)
-\]
-
-\[
-\vec{u} \times \vec{v} = (0, 0, 2\cdot3 - 0\cdot0) = (0, 0, 6)
-\]
-
-\[
-L = |\vec{u} \times \vec{v}| = 6
-\]
-
- **Jawaban: 6**
+u × v = [0, 0, 6]
+Luas = ||[0, 0, 6]|| = 6
+```
+✅ **Jawaban: 6**
 
 ---
 
 ## Soal 3
-Titik: A = (0,0,0), B = (1,3,-1), C = (2,1,1)
+Titik: A = (0, 0, 0), B = (1, 3, -1), C = (2, 1, 1)
 
-Hitung vektor:
-\[
-\vec{AB} = (1-0, 3-0, -1-0) = (1, 3, -1) \\
-\vec{AC} = (2-0, 1-0, 1-0) = (2, 1, 1)
-\]
+```
+AB = [1, 3, -1]
+AC = [2, 1, 1]
 
-Cross product:
-\[
-\vec{AB} \times \vec{AC} = 
-\begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
-1 & 3 & -1 \\
-2 & 1 & 1
-\end{vmatrix} = (3\cdot1 - (-1)\cdot1, -((1\cdot1 - (-1)\cdot2)), 1\cdot1 - 3\cdot2) \\
-= (4, -3, -5)
-\]
+AB × AC = [
+    (3*1 - (-1)*1),
+    (-1*2 - 1*1),
+    (1*1 - 3*2)
+] = [4, -3, -5]
 
-\[
-|\vec{AB} \times \vec{AC}| = \sqrt{4^2 + (-3)^2 + (-5)^2} = \sqrt{50}
-\]
-
-\[
-\text{Luas segitiga} = \frac{1}{2} \sqrt{50} = \frac{5\sqrt{2}}{2}
-\]
-
- **Jawaban: (5√2)/2**
+||AB × AC|| = sqrt(4² + (-3)² + (-5)²) = sqrt(50)
+Luas = 1/2 * sqrt(50) = (5√2)/2
+```
+✅ **Jawaban: (5√2)/2**
 
 ---
 
 ## Soal 4
-Titik: A = (5,2,-1), B = (3,6,2), C = (1,0,4)
+Titik: A = (5, 2, -1), B = (3, 6, 2), C = (1, 0, 4)
 
-\[
-\vec{AB} = (3-5, 6-2, 2-(-1)) = (-2, 4, 3) \\
-\vec{AC} = (1-5, 0-2, 4-(-1)) = (-4, -2, 5)
-\]
+```
+AB = [-2, 4, 3]
+AC = [-4, -2, 5]
 
-Cross product:
-\[
-\vec{AB} \times \vec{AC} = 
-\begin{vmatrix}
-\mathbf{i} & \mathbf{j} & \mathbf{k} \\
--2 & 4 & 3 \\
--4 & -2 & 5
-\end{vmatrix} = (26, -2, 20)
-\]
+AB × AC = [
+    (4*5 - 3*(-2)),
+    (3*(-4) - (-2)*5),
+    (-2)*(-2) - 4*(-4)
+] = [20 + 6, -12 + 10, 4 + 16] = [26, -2, 20]
 
-Panjang:
-\[
-|\vec{AB} \times \vec{AC}| = \sqrt{26^2 + (-2)^2 + 20^2} = \sqrt{1080}
-\]
-
-\[
-\text{Luas segitiga} = \frac{1}{2} \sqrt{1080} = 3\sqrt{30}
-\]
-
-**Jawaban: 3√30**
+||AB × AC|| = sqrt(26² + (-2)² + 20²) = sqrt(1080)
+Luas = 1/2 * sqrt(1080) = 3√30
+```
+✅ **Jawaban: 3√30**
