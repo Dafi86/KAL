@@ -4,7 +4,7 @@ title: materi10
 ---
 
 
-# 📘 Materi Ringkasan Perkalian Silang (Cross Product)
+# Materi Ringkasan Perkalian Silang (Cross Product)
 
 ## 🔹 Pengertian Perkalian Silang
 Perkalian silang adalah operasi antara dua **vektor dalam ruang tiga dimensi (3D)** yang menghasilkan vektor baru yang **tegak lurus** terhadap kedua vektor asal.
@@ -58,7 +58,7 @@ L = 1/2 * ||AB × AC||
 
 ---
 
-# 📝 Penyelesaian Soal
+#  Penyelesaian Soal
 
 ## Soal 1
 ```
@@ -68,7 +68,7 @@ v = [2, 1, 0]
 u × v = [0, 0, -3]
 Luas = ||[0, 0, -3]|| = 3
 ```
-✅ **Jawaban: 3**
+ **Jawaban: 3**
 
 ---
 
@@ -80,7 +80,7 @@ v = [0, 3, 0]
 u × v = [0, 0, 6]
 Luas = ||[0, 0, 6]|| = 6
 ```
-✅ **Jawaban: 6**
+ **Jawaban: 6**
 
 ---
 
@@ -100,7 +100,7 @@ AB × AC = [
 ||AB × AC|| = sqrt(4² + (-3)² + (-5)²) = sqrt(50)
 Luas = 1/2 * sqrt(50) = (5√2)/2
 ```
-✅ **Jawaban: (5√2)/2**
+ **Jawaban: (5√2)/2**
 
 ---
 
@@ -120,4 +120,4 @@ AB × AC = [
 ||AB × AC|| = sqrt(26² + (-2)² + 20²) = sqrt(1080)
 Luas = 1/2 * sqrt(1080) = 3√30
 ```
-✅ **Jawaban: 3√30**
+ **Jawaban: 3√30**
